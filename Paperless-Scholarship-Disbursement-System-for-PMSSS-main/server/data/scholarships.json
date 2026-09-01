@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "PMSSS Merit Scholarship",
+    "amount": 50000,
+    "eligibility": "Marks > 85%",
+    "category": "MERIT"
+  },
+  {
+    "id": 2,
+    "name": "Social Welfare Scholarship",
+    "amount": 30000,
+    "eligibility": "Income < 2.5L",
+    "category": "NEED"
+  },
+  {
+    "id": 3,
+    "name": "Technical Excellence Grant",
+    "amount": 75000,
+    "eligibility": "B.Tech students with Marks > 90%",
+    "category": "MERIT"
+  }
+]

@@ -1,0 +1,112 @@
+.admin-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.stat-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid var(--border);
+}
+
+.stat-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.bg-blue { background-color: #3B82F6; }
+.bg-orange { background-color: #F59E0B; }
+.bg-green { background-color: #10B981; }
+.bg-red { background-color: #EF4444; }
+
+.stat-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.stat-info p {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.table-header {
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-table th {
+  text-align: left;
+  padding: 1rem 1.5rem;
+  background-color: #F9FAFB;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.admin-table td {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.student-cell p {
+  margin: 0;
+}
+
+.badge-pending { background-color: #FEF3C7; color: #92400E; }
+.badge-approved { background-color: #D1FAE5; color: #065F46; }
+.badge-rejected { background-color: #FEE2E2; color: #991B1B; }
+
+.admin-modal {
+  max-width: 800px !important;
+}
+
+.admin-actions {
+  gap: 1rem;
+}
+
+.btn-error {
+  background-color: var(--error-color);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-error:hover {
+  background-color: #DC2626;
+}
+
+.doc-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}

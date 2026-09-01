@@ -1,0 +1,479 @@
+Perfect 👍 — now we’ll go **deep into the Student Portal UI + UX + Components**, so you can directly give this to an AI (like a UI generator or frontend tool) and build it.
+
+I’ll describe:
+
+* Each page
+* Exact sections/components
+* What data appears
+* UI layout (top → bottom)
+* Behavior (what happens on click)
+
+---
+
+# 🎓 STUDENT PORTAL — COMPLETE UI SPEC
+
+---
+
+# 🧭 1. GLOBAL LAYOUT (Applies to All Pages)
+
+### 🔷 Structure
+
+* **Top Navbar**
+* **Left Sidebar**
+* **Main Content Area**
+
+---
+
+### 🔝 Top Navbar
+
+**Contains:**
+
+* Logo (left)
+* Search bar (center)
+* Notification bell 🔔
+* Profile dropdown (right)
+
+**Profile Dropdown:**
+
+* My Profile
+* Settings
+* Logout
+
+---
+
+### 📂 Sidebar Menu
+
+* Dashboard
+* Apply Scholarship
+* My Applications
+* Documents
+* Notifications
+* Help / Support
+
+---
+
+---
+
+# 🏠 2. DASHBOARD PAGE
+
+![Image](https://images.openai.com/static-rsc-4/HuXjgYxpst-uyOehYox01o8gmwL2GN5K5Z8gpPbAVJNROUxbBaA-EWyAXPpu_-C__H-L7gahWcfpIkpTYOnADcnOYCyXKv8haTug29ICkiil3blAXDyPgNH5qlfFJ7UIaI7hPizi7ANhkvJ1Y13fTaziogh8R4Nkg1o3T4Sj16fvrmiwPPOtBjZPhIuva2p_?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/8cxsaONwRoT9CFBT6fG9WNBniE7u_fZazwitYAcbHK6aD1UVadNZi44EYDS9tYXn1Qaum4K9XwPFkY37kcLWPwMk8ZUykYAjoxmpwNc9DIfZVecf5ERZhy5cG3tk19i5vUiCwedoW-f0C0Jm4dzvo3111mzRKvf81RoHA1vUEZq7BysCiSM0tse8Q4YLGePU?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/_wi0GJ0Y_NLws7wG9plAN6AjEjH4nHdODeA66Ylt1RWKnntrbeK9tGuK4AS-m5LgUsk3EGnj802AiSb__y2cOiKyKTOQEu-dPWgLVSGX9ECZ_1uoWyOEZu4aqYobMFvsRkd4PCMld9SwWuWOVQsBYRl9vOLlqHK4RK16H7tuVDJwaF4G7fADhklCdYOPpvHf?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/Y0bXKhE9kF4THNB8Iz0DANlWSbvN6uZ4ZMrdOjEH1jFjfpTP_8hAgdOROsS1gkHn4L2dmj-KLAsKAVm38ogyJYtz7pMzYjqe6J8cTHOO2Y6LmWZ9U8I3SPeg-4v8ZO3QsRdWymgGFe4Bntw_jeOZ5r3t1_wNCpbuN30YisIBSR4HlwA2P37D7JBS5-o6aW8R?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/GdUP_KUX5-9A90Qx5mVAw9wPwTR38kehQYIzq4qz3N1IV3e4--rlGyzTxSTDLpgQ8I8dY9KsoWQBlM8j8RWQNa9DLj9YQ-QLz2XcV76VZp9Sg_sR6uSOz5hQOnuAoosUMVPMwGBp4maB2qqOEYUwQr4w8V8q__apCwjx0gev2YkvO7jxed4BXJwiGrpvPHm0?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/uE9O0ym-_Swmnpwpsc6_gungVD6-IvDodoX8LkXTMfuWBbW6SAfR5m8AnypwotqoZuWNUhQbpZw0HvZ2B7-X1OU6IBV9FKaq_HzxEewkwEaXL6w8Z0MTrsTRLS6F_yHoGoYcBkni3Ae-Z2bnzcT4O_M56wtPefjAmxdrNEOM_YrhR8-pXN6VekWumz_IOrGu?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/xwLsFGSgty3CEAXwhvgUWl6L-7EuUDQS7MDAvNpQt0MOExDEpCwUXdlH-R7UBwOx4SS95_v_ZHHqQqyYwzwqJfGSZ9yyrkbD1VaG3UiC3eS6J9doD-DwCddxLXEL71zZl4Oez3xKxEfpb-q2JJrmtyzsEuGTTbugSnwo3mtwJeDodpuW5m9J_Zx4CqmbYAT9?purpose=fullsize)
+
+## 🧩 Sections
+
+### 🟢 (A) Welcome Section
+
+* “Welcome, [Student Name]”
+* Profile completion % (progress bar)
+
+---
+
+### 🟡 (B) Quick Stats Cards
+
+4 cards in row:
+
+* Total Scholarships Available
+* Applied
+* Approved
+* Pending
+
+👉 Each card clickable → redirects
+
+---
+
+### 🔵 (C) Available Scholarships
+
+* List view (cards or table)
+
+Each card contains:
+
+* Scholarship Name
+* Amount
+* Eligibility short text
+* Apply Button
+
+---
+
+### 🟣 (D) Recent Activity
+
+* “Application Submitted”
+* “Approved”
+* “Rejected”
+
+---
+
+### ⚙️ Behavior
+
+* Click “Apply” → opens Apply Page
+* Click stats → filtered applications page
+
+---
+
+---
+
+# 📝 3. APPLY SCHOLARSHIP PAGE
+
+![Image](https://images.openai.com/static-rsc-4/iYJ12CPGVFyz9q_-GCKLAsgjdVkdOrcvaWV_cRsnzmg7h3vUC6hhbFOqtbEnozey7YupdgikDPGKhSpW0KmQyKBQJHoZKj0Jg4e5IjknA9J6mPy9KmorIykLqNWtdFd7mx3t6xBU-69-2ydAgNgfpMZV-giFnWeJzS1h711nBzmv_fF8LHpkAJxOIEAt0v3p?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/aqApx3S9AqBvWSo9FbNCQXmUgtACbYhXtgnFP-94MbBsKUSWfAAlQYM1SrxLo1mdmPAquHKVGOaUOxKLBlIkMLnp7hj6K9eEijEnMLh3-fW--THGRchVOzJ-Zz5fhXPIlklJX1RESTNA_qiB9MAePJ3IaXxX__mGgLaTk43ylUMJGYPvIIfutifWo8m5Abi5?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/Lm4eESdPhRQlOA88NjsGaHpcjHOq-h5w6tb0FSfU8RbfNNdsT8695zJLNszjHs5JnTv039kvOnZfER8_670O9Wb_4WAWqdtvP921iUce-7nRAuz4sj5XDyBrXkObaadxZ-erlgMv3RK59Fj_TFpkdEMVDkHdvzdgXp53ASR-5LSQtsPX5T2wUHMhc-MLybdX?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/m7ibVUfqDWxKxzGwKhyMkyspNQodgqSKfFm05RCk322WNYx1XL_AhjF0yrJQss2w7LPI2hcnN0MH7YJd-kPesG5UyIvA2dERGZcpDvQbx-EPqcopQI9M0i93sQb9PzkSItYa4bkJhRdjC07gpr6aN7rwQC0IYw5smKC7raJwM5UsxiX-5bHJrI4VyK-j61F4?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/0MtA4-4p9Zd-wVoC-4aTd-wP9mzrRXIlfA_oP0oGHaQQZdQPcBdWICVqnAWsJIcuX9reQa-6WxtCpE5CbHaiW9a3bMdqKExP_N8g2uR3VYIt7ioWLK3b7ASy6djugofMcZpRw8PGrR_gT7EywdOsMWjh7OWW9eSsZYGQoAbCNN1fPdNfiRChZEL9KyNdzt1P?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/PF6d9QKG4R_iw7hBTaaXSh1uxrGdwmP1w20ZP-9nLtZyB0h3WBQGkQE051cIZvMbms_e7KE0Vz2sOiZQ19Sv2Pllp5mqvqiv98lga9ptATdEqw8KNp_ZzRSbqYkairfO3ldpUX_6CArbDR54BqlVW9pG8tbfxmvzfwNzQ1sNE2S0gd_I4PrnZyRNcB3T0U9K?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/gkEanT3RWut2Uk8Miya1vjZVchcu5Gijqfg29cqObXYqQEVJJ2Qm9vatKL1bwhaWpSM-biv7MXVCG6sAjdTFQQtU3cKJt5jaerzFh-fRXsV4YTYW2FE2O_qMUa5ejgMCVvgS6cJT4-wUrsIPvRshdR4ve6obdDQ4Elfvd_82YvBwh8AVHxgAFEBXo0hQ2Teh?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/UHDNSFuzMPLUg1gP1VgxO915QQg3HYxAE-WhE-klkMmwSy-CFjofZrmLXcbH3SJhmssag-03V5Dd2-UQK7kuviBCLkvvTs7RkNX0S0dtfDRE0Uqy8mf33-qOqOjZCjE2LY1I734pMnlErVZT3CcjCHIMwK5Fd3ooaiptIg2JZLWD8LGU0eN2LFzV_f3Vtclb?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/5yeVVnMmwBrAB_8UNZAvnMBA1NgkyGNdpqvo5Ko0Ubs9FpQI-22ZMyUFUW_NGA6l2a9aAI-qfR3VwNKMF3hH05s_AuluSOQp-wbL1Iv1mIRqR6NmstwPQLKGf7orESIQOyPe5c7E4pt531m5qUlu6oM2MyyNkSusVA0qw-S2I_TohcPSei4KWfz4WpkdLShd?purpose=fullsize)
+
+## 🧩 Multi-Step Form (VERY IMPORTANT)
+
+### Step Indicator (Top)
+
+* Step 1: Personal Info
+* Step 2: Academic Info
+* Step 3: Scholarship Selection
+* Step 4: Document Upload
+* Step 5: Review & Submit
+
+---
+
+## 🟢 Step 1: Personal Info
+
+Fields:
+
+* Name
+* DOB
+* Gender
+* Aadhaar Number
+* Mobile Number
+* Address
+
+---
+
+## 🟡 Step 2: Academic Info
+
+Fields:
+
+* College Name
+* Course
+* Year
+* Marks (%)
+* Roll Number
+
+---
+
+## 🔵 Step 3: Scholarship Selection
+
+* Dropdown / Cards:
+
+  * Merit-based
+  * Need-based
+  * Category-based
+
+👉 Auto eligibility check (optional feature)
+
+---
+
+## 🟣 Step 4: Document Upload
+
+* Upload boxes:
+
+  * Income Certificate
+  * Marksheet
+  * ID Proof
+
+👉 Drag & Drop UI
+
+---
+
+## 🔴 Step 5: Review & Submit
+
+* Show all filled data
+* Edit button
+* Final Submit button
+
+---
+
+### ⚙️ Behavior
+
+* Auto-save form
+* Validation errors (red text)
+* Submit → success message + redirect
+
+---
+
+---
+
+# 📄 4. MY APPLICATIONS PAGE
+
+![Image](https://images.openai.com/static-rsc-4/bZvR7BG2y7WS1MpvnVT6BgJw1zBIUoDANF1m771a31CSFZZzSyA5l-a9LFYlN8wug6NYi23wjObf0soFJkEd-F8NVs_UfKeNxIbMT4JWdf3DFLf5_LOmWwI9z-Pu-O98RCthZ4cu6tjtiCgKG5vSbEvHG4rgJ8r2oPqkprjsIfXHWsNQHxme3YZ_5lIJRJh_?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/mK6-6nxcb2VzirL1HEZqxLF5DvLJOm6NvQctbNUzULQLt_yjMHZZWo_--AeyFRsn2b8h6dEtPZY2V82uslkl9S1rvmsFv2EMXec6AWEUH2A1eKRUV4IHc3LvKcrVw4Mh14OXsepbnVBbWcIH3_UQuAcGMZWcpnnqpolXZdpXptMDq0vsDtYLIVLwPVdCc-jT?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/YnciTGH-wemdgi-pbf4kXWTWI35vvJrIeSyUm0Xk3THpZhGkUlSCcVGzTHw7HyJi2PnQfqn1yCatxB0kFHV3yDMH4W4kcQ4DXeIlStYjyduwnMCXsP_V5fuBqlP1H8wTRIFXuXGySt0IDpF_syUV6-2VuDAFoMK83E7OpImmUZRdxb4cNR5MZiBS-aJC46fo?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/R6X5CrGv5jw_BpeCKH7yfB2_JPZqRFV0eOJjz8chG385zcqcc2HHB0k5c0EUS2RINBuAHVukZdzAD6T_-U0mmaQhDMK91-LpYIdWdKYJK9Fxq_p-Wxam232EdUAofO6gpz3V3Bejfi27PkPWOJz0knfshaqZI-ZV-CPxI148i2IGTj7RxTYD2bctnPHaPKV5?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/MG31o82_YnYW1DJeOwj22xZ9n84_-DjrbFnDcs1kTs1u45aMCT0vzRScDx-ZYmf_ph338yWdTnbe9Pz4FH77sXIqYLLCp-Ouhyjs5n20zbFijaSCVNKYCygNAi8ZAvA8UkgKMyclDIfJ-LwJcOfIimhJ1rzyL2QDF8SgJ_Nu6etwrk4CHV2ttGuJuOndWVYp?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/IG0HTiIjigrFbDzwb6FPyMtXRQfLQ4gWKYJ-lK93pTWcyvxcyPglVb5uzdBw6JzoM8mXw3O1f7188c6pYj30R--1NrhWNDlGwVt2TbiJ67pwgkIT11fhnq9URagR3BP_0GxY1QBCA-v4rublaCzDvEFdPEFcahjz26ujKpZJOdfo9id_QtOYPBRA_DnNFvtv?purpose=fullsize)
+
+## 🧩 Layout
+
+### 🔍 Filters (Top)
+
+* Status dropdown:
+
+  * All
+  * Pending
+  * Approved
+  * Rejected
+
+---
+
+### 📊 Table/List
+
+Columns:
+
+* Application ID
+* Scholarship Name
+* Date Applied
+* Status (color badges)
+* Action (View)
+
+---
+
+### 🟢 Status Colors
+
+* Green → Approved
+* Yellow → Pending
+* Red → Rejected
+
+---
+
+### 👁️ View Button → Opens Detail Page
+
+---
+
+---
+
+# 📑 5. APPLICATION DETAIL PAGE
+
+## 🧩 Sections
+
+### 🟢 Basic Info
+
+* Name
+* Scholarship Name
+* Date
+
+---
+
+### 🟡 Status Tracker (Horizontal)
+
+* Submitted ✔
+* Under Review ⏳
+* Approved ❌/✔
+* Payment Done 💰
+
+---
+
+### 🔵 Documents Section
+
+* View uploaded files
+
+---
+
+### 🔴 Remarks Section
+
+* Admin comments (if rejected)
+
+---
+
+---
+
+# 📂 6. DOCUMENTS PAGE
+
+![Image](https://images.openai.com/static-rsc-4/8cxsaONwRoT9CFBT6fG9WNBniE7u_fZazwitYAcbHK6aD1UVadNZi44EYDS9tYXn1Qaum4K9XwPFkY37kcLWPwMk8ZUykYAjoxmpwNc9DIfZVecf5ERZhy5cG3tk19i5vUiCwedoW-f0C0Jm4dzvo3111mzRKvf81RoHA1vUEZq7BysCiSM0tse8Q4YLGePU?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/mfDJD1sAU_oQ_qfUjZBcM-J-L_yyQtPJ-v8yNR2L9has_cD29XOHmK0FheMN3fCF9FC-6fd52v2N-iGq3F7ERIv0GFStjQt2E7BS0QYv98u1oyM3ZrI4C0-iNucJ7bacHEb3fkyr3C-cDJ4HWS8fAWhjFQgxvtjkGNVMrscsfMfGvk3UbjmGVf40Z7kc5XwP?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/Uwof2L4POPobhp8NnIT45bw8IUpBWLSe2edgpd4u8ZNTpJBxdRqqG7eE_fFGGtgZVLq-gvEJSiUndVl6q7O81Qo-AS1Le3MXfOa7iTK7jJkpa58TZNGLLuw_O_CPMra9K3UlR2D1bHtUFyyE2OQ4AHPYIjB11NjaAuKY3JglstkoKPxnJ2jC2EmRT0z08Vcp?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/FdqnHyqNqcZrFG-s2k8NnVFOmT_66uI_5osCFz98kYjTuY4og7fbqIA-rVjaPjk136dPxZTLZnh8-t8iOnEz0LgSgZ3_6om0ild6dbhQX-waHqHVtUIKfSR4CG8Afly2LHZgKsClVHjcTI1a4cjAdAw9C2dtzjb9PrlsL7-3S4VGXtIcVxFex7QqnOAnV-su?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/Ovwpl3pB_zUUCtFGrK1RG123RtI_juM6DVHKZ3pXGBKalCv6kA9ZWOwXKW-fWc6vjkmT8gL1C7jVGlRZKJZYi2VNQPKPqbzKTYMktkjg5GbLVml3Jabzj4v0z3NfMlH_ns70FMvqyUJYuQ5z_cqGGkyEbxmcwhkLu-3r6_TciadxfgXp9MDcU1D60A4WrCM2?purpose=fullsize)
+
+![Image](https://images.openai.com/static-rsc-4/UHDNSFuzMPLUg1gP1VgxO915QQg3HYxAE-WhE-klkMmwSy-CFjofZrmLXcbH3SJhmssag-03V5Dd2-UQK7kuviBCLkvvTs7RkNX0S0dtfDRE0Uqy8mf33-qOqOjZCjE2LY1I734pMnlErVZT3CcjCHIMwK5Fd3ooaiptIg2JZLWD8LGU0eN2LFzV_f3Vtclb?purpose=fullsize)
+
+## 🧩 Features
+
+* Upload new document
+* View existing documents
+* Delete / Replace
+
+---
+
+### 📄 Document Cards
+
+Each card:
+
+* File name
+* Upload date
+* View button
+* Delete button
+
+---
+
+---
+
+# 🔔 7. NOTIFICATIONS PAGE
+
+## 🧩 Layout
+
+* List of notifications:
+
+  * “Application Approved”
+  * “Document Rejected”
+
+---
+
+### 🟢 Each Item:
+
+* Title
+* Message
+* Date
+* Read/Unread indicator
+
+---
+
+---
+
+# 👤 8. PROFILE PAGE
+
+## 🧩 Sections
+
+### 🟢 Personal Info
+
+* Editable fields
+
+---
+
+### 🟡 Bank Details (IMPORTANT)
+
+* Account Number
+* IFSC Code
+
+👉 Used for DBT (Direct Benefit Transfer)
+
+---
+
+### 🔵 Security
+
+* Change password
+* Enable OTP
+
+---
+
+---
+
+# 🆘 9. HELP / SUPPORT PAGE
+
+## 🧩 Features
+
+* FAQ section
+* Contact form
+* Chatbot (optional)
+
+---
+
+---
+
+# 🎨 UI DESIGN GUIDELINES (Give this to AI)
+
+### 🎯 Style
+
+* Clean + Minimal
+* Government + Professional
+
+### 🎨 Colors
+
+* Primary: Blue (#2563EB)
+* Secondary: White
+* Success: Green
+* Warning: Yellow
+* Error: Red
+
+---
+
+### 🔤 Fonts
+
+* Poppins / Roboto
+
+---
+
+### 📐 Components
+
+* Cards with shadow
+* Rounded buttons
+* Icons (Material UI / FontAwesome)
+
+---
+
+---
+
+# ⚡ MICRO INTERACTIONS (Important for UI)
+
+* Button hover effect
+* Loading spinner on submit
+* Toast messages:
+
+  * “Application Submitted Successfully”
+
+---
+
+---
+
+# 🧠 FINAL STRUCTURE (FOR AI PROMPT)
+
+You can give this to AI:
+
+👉 “Create a modern student scholarship portal UI with:
+
+* Sidebar + Top navbar layout
+* Dashboard with stats cards
+* Multi-step scholarship form
+* Application tracking table
+* Document upload system
+* Clean, responsive design”
+
+---
+
+---
+
+# 🚀 If You Want Next Step
+
+I can also:
+✅ Generate **exact Figma-style layout prompt**
+✅ Create **React code UI (ready to run)**
+✅ Design **Admin portal same detail**
+✅ Make **API structure + backend flow**
+
+Just tell me 👍

@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1778435279765,
+    "name": "virat",
+    "email": "viratsingh10081@gmail.com",
+    "password": "$2b$10$b0/goHrBeNqQ/1POWe2abO2CdRy.EZQGKXrwOHLxlqY2ud3px9gmi",
+    "role": "ROLE_STUDENT"
+  },
+  {
+    "id": 1778437322072,
+    "name": "vikas",
+    "email": "vikas@mail.com",
+    "password": "$2b$10$03SdoKo1UaImtV1xGT1J..W2gue4RIZxKqNhstell9jeXO/jWvkYm",
+    "role": "ROLE_STUDENT"
+  },
+  {
+    "id": 1778475915300,
+    "name": "virat singh",
+    "email": "viratsingh10071@gmail.com",
+    "password": "$2b$10$EOvcZl0iiKSA6LkPxOr6V.VmaHB4R/EnqDNobzQMpVMh8IPqM7n9K",
+    "role": "ROLE_STUDENT"
+  },
+  {
+    "id": 1778487992968,
+    "name": "virat singh",
+    "email": "viratsingh1061@gmail.com",
+    "password": "$2b$10$uMjoBECwaPyD3kUX6FEVBOb5up164msjKiV.QS/koOKhSS6lBFBc.",
+    "role": "ROLE_STUDENT"
+  }
+]

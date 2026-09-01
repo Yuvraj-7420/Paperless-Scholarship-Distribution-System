@@ -1,0 +1,26 @@
+{
+  "name": "scholar-distribution",
+  "version": "1.0.0",
+  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "npm run dev --prefix server",
+    "client": "npm run dev --prefix client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yashrajak2005/Development-of-a-Paperless-Scholarship-Disbursement-System-for-PMSSS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/yashrajak2005/Development-of-a-Paperless-Scholarship-Disbursement-System-for-PMSSS/issues"
+  },
+  "homepage": "https://github.com/yashrajak2005/Development-of-a-Paperless-Scholarship-Disbursement-System-for-PMSSS#readme",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
